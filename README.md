@@ -22,17 +22,16 @@ Layui 是一套开源的 Web UI 组件库，采用自身轻量级模块化规范
 
 ## 方式1：常规web环境
 
-> 常规web环境是指如：`lnmp/lamp` 或 `宝塔面板` 这种，此处仅做简单说明，不进行详细的图文说明！
+常规web环境是指如：`lnmp/lamp` 或 `宝塔面板` 这种，此处仅做简单说明，不进行详细的图文说明！
 
 * 建立一个新站点
 * 将 `src/v2` 上传到站点根目录
-* 结束
 
 ## 方式2：容器化部署
 
-> 容器化部署是指基于 docker 技术，快速基于做好的 `镜像` 生成一个 `容器`，开箱即用的意思！需保证服务器已经装好了 docker 相关服务！
+容器化部署是指基于 docker 技术，快速基于做好的 `镜像` 生成一个 `容器`，开箱即用的意思！需保证服务器已经装好了 docker 相关服务！
 
-### docker-compose 方式部署（推荐）
+### 方式1：docker-compose 方式部署（推荐）
 
 ```yml
 version: '3'
@@ -45,9 +44,19 @@ services:
     restart: always
 ```
 
-### docker 命令行方式部署
+### 方式2：docker 命令行方式部署
 
 ```shell
 docker run -itd --name=docker-layui-doc -p 8800:80 timoprince/docker-layui-doc
 ```
 
+# 相关地址
+
+* Gitee：[https://gitee.com/timoprince/docker-layui-doc](https://gitee.com/timoprince/docker-layui-doc)（国内推荐）
+* Github：[https://github.com/timoprince/docker-layui-doc](https://github.com/timoprince/docker-layui-doc)
+* Docker Hub：[https://hub.docker.com/r/timoprince/docker-layui-doc](https://hub.docker.com/r/timoprince/docker-layui-doc)
+
+# 致谢名单
+
+* 感谢 [贤心](https://gitee.com/sentsim/projects) 制作了 layui！
+* 感谢 [Gihub Proxy 代理加速](https://ghproxy.com/) 提供 Github 加速支持！
