@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  docker-layui-doc:
     image: timoprince/docker-layui-doc
     container_name: docker-layui-doc
     ports:
