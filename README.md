@@ -36,7 +36,7 @@ Layui 是一套开源的 Web UI 组件库，采用自身轻量级模块化规范
 ```yml
 version: '3'
 services:
-  web:
+  docker-layui-doc:
     image: timoprince/docker-layui-doc
     container_name: docker-layui-doc
     ports:
