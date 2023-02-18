@@ -1,0 +1,8 @@
+version: '3'
+services:
+  web:
+    image: timoprince/docker-layui-doc
+    container_name: docker-layui-doc
+    ports:
+      - 8800:80
+    restart: always

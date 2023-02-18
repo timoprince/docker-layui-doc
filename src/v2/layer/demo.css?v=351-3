@@ -29,7 +29,7 @@ pre code{font-family:'\5FAE\8F6F\96C5\9ED1';}
 
 /* 页头 */
 .layer_banner{height:190px; background:#393D49; }
-.layer_banner span.ie6PNG{ position:absolute; width:912px; height:79px; background:url(https://v2/layer/images/banner.png) no-repeat; top:30px;}.layer_banner h1{display:none;}
+.layer_banner span.ie6PNG{ position:absolute; width:912px; height:79px; background:url(https://layer/images/banner.png) no-repeat; top:30px;}.layer_banner h1{display:none;}
 .layer_banner em{ position:absolute; bottom:30px; right:0; color:#fff;}.layer_banner em a{color:#fff;}
 
 /* 导航 */

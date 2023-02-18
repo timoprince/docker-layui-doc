@@ -9,14 +9,14 @@
   <script>
   ;!function(){self!==parent&&(location.href="//www.baidu.com/")}();
   </script>
-  <link href="/v2/static/libs/layui/css/layui.css" rel="stylesheet">
-  <link href="/v2/static/css/global.css" rel="stylesheet">
+  <link href="/static/libs/layui/css/layui.css" rel="stylesheet">
+  <link href="/static/css/global.css" rel="stylesheet">
 </head>
 <body>
 <div class="layui-header header header-docs">
   <div class="layui-container">
     <a class="logo" href="../../index.html">
-      <img src="/v2/static/images/layui/logo.png" alt="layui">
+      <img src="/static/images/layui/logo.png" alt="layui">
     </a>
     <div class="layui-form layui-hide-xs component" lay-filter="LAY-site-header-component"></div>
     <div class="layui-hide-xs site-notice"></div>
@@ -580,7 +580,7 @@ table.render({
       <p>按照上述的规范写好table原始容器后，只要你加载了layui 的 table 模块，就会自动对其建立动态的数据表格。下面是一个示例：</p>
     </div>
     <pre class="layui-code">
-&lt;table class=&quot;layui-table&quot; lay-data=&quot;{height:315, url:&#x27;/v2/static/json/table/user.json&#x27;, page:true, id:&#x27;test&#x27;}&quot; lay-filter=&quot;test&quot;&gt;
+&lt;table class=&quot;layui-table&quot; lay-data=&quot;{height:315, url:&#x27;/static/json/table/user.json&#x27;, page:true, id:&#x27;test&#x27;}&quot; lay-filter=&quot;test&quot;&gt;
   &lt;thead&gt;
     &lt;tr&gt;
       &lt;th lay-data=&quot;{field:&#x27;id&#x27;, width:80, sort: true}&quot;&gt;ID&lt;/th&gt;
@@ -2200,10 +2200,10 @@ window.global = {
 </div>
 <div class="site-mobile-shade"></div>
  
-<script src="/v2/static/libs/layui/layui.js"></script>
+<script src="/static/libs/layui/layui.js"></script>
 <script>
 layui.config({
-  base: '/v2/static/modules/'
+  base: '/static/modules/'
   ,version: '27601'
 }).use('global');
 </script>
@@ -2217,7 +2217,7 @@ layui.use('table', function(){
   table.render({
     elem: '#demo'
     ,height: 312
-    ,url: '/v2/static/json/table/user.json' //数据接口
+    ,url: '/static/json/table/user.json' //数据接口
     ,page: true //开启分页
     ,cols: [[
       {field:'id', title: 'ID', width:80, sort: true}

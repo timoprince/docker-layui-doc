@@ -9,15 +9,15 @@
   <script>
   ;!function(){self!==parent&&(location.href="//www.baidu.com/")}();
   </script>
-  <link href="/v2/static/libs/layui/css/layui.css" rel="stylesheet">
-  <link href="/v2/static/css/global.css" rel="stylesheet">
+  <link href="/static/libs/layui/css/layui.css" rel="stylesheet">
+  <link href="/static/css/global.css" rel="stylesheet">
 </head>
 <body>
 <div class="layui-layout layui-layout-admin">
   <div class="layui-header header header-demo">
   <div class="layui-fluid">
     <a class="logo" href="../index.html">
-      <img src="/v2/static/images/layui/logo.png" alt="layui">
+      <img src="/static/images/layui/logo.png" alt="layui">
     </a>
     <div class="layui-form layui-hide-xs component" lay-filter="LAY-site-header-component"></div>
     <div class="layui-hide-xs site-notice"></div>
@@ -319,10 +319,10 @@ window.global = {
 </div>
 <div class="site-mobile-shade"></div>
  
-<script src="/v2/static/libs/layui/layui.js"></script>
+<script src="/static/libs/layui/layui.js"></script>
 <script>
 layui.config({
-  base: '/v2/static/modules/'
+  base: '/static/modules/'
   ,version: '27601'
 }).use('global');
 </script>
@@ -406,7 +406,7 @@ layui.use('layer', function(){ //独立版的layer无需执行这一句
         ,success: function(layero){
           var btn = layero.find('.layui-layer-btn');
           btn.find('.layui-layer-btn0').attr({
-            href: '/v2/'
+            href: '/'
             ,target: '_blank'
           });
         }
@@ -418,7 +418,7 @@ layui.use('layer', function(){ //独立版的layer无需执行这一句
       
       layer.open({
         type: 1
-        ,offset: type //具体配置参考：/v2/docs/modules/layer.html#offset
+        ,offset: type //具体配置参考：/docs/modules/layer.html#offset
         ,id: 'layerDemo'+type //防止重复弹出
         ,content: '<div style="padding: 20px 100px;">'+ text +'</div>'
         ,btn: '关闭全部'
